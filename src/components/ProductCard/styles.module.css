@@ -27,6 +27,7 @@
   border: 1px solid #d1d1d1;
   border-radius: 6px;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 @media (min-width: 768px) {
