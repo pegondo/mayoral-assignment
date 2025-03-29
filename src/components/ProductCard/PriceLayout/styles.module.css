@@ -1,0 +1,27 @@
+.price {
+  margin: 7px 0px;
+  color: #6e6e6f;
+}
+
+.lineThrough {
+  text-decoration: line-through;
+}
+
+.discount {
+  margin: 0px;
+  color: #d7837f;
+}
+
+.discount::before {
+  content: '\00A0';
+}
+
+@media (min-width: 768px) {
+  .price {
+    margin: 16px 0px;
+  }
+
+  .discount {
+    margin: 16px 0px;
+  }
+}

@@ -1,0 +1,40 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.text {
+  color: #6e6e6f;
+}
+
+.name {
+  padding: 10px 4px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.hasMoreColors::before {
+  content: '\00A0';
+}
+
+.button {
+  width: auto;
+  padding: 10px 10px 10px 10px;
+  background-color: #2971ce;
+  color: white;
+  border: 1px solid #d1d1d1;
+  border-radius: 6px;
+  text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding-bottom: 20px;
+  }
+
+  .name {
+    padding: 40px 4px;
+  }
+}
