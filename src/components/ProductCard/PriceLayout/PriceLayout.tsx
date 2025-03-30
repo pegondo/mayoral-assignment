@@ -2,7 +2,7 @@ import clsx from 'clsx';
 import styles from './styles.module.css';
 import { computePriceDiscount } from '../../../../utils/price';
 
-interface Props {
+export interface Props {
   /** The product price. */
   price: number;
   /** The discount applied to the product (in percentage format). */
@@ -18,9 +18,11 @@ const PriceLayout: React.FC<Props> = ({ price, discountPercentage }) => {
   const discountedPrice = computePriceDiscount(price, discountPercentage);
 
   return (
-    <div>
-      <p className={clsx(styles.price, hasDiscount && styles.lineThrough)}>{price} €</p>
-      <p className={styles.discount}>
+    <div data-testid="price-layout">
+      <p className={clsx(styles.price, hasDiscount && styles.lineThrough)} data-testid="price-p">
+        {price} €
+      </p>
+      <p className={styles.discount} data-testid="discounted-price">
         {hasDiscount && `${discountedPrice} €(-${discountPercentage}%)`}
       </p>
     </div>

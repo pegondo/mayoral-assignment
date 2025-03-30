@@ -5,7 +5,7 @@ import Sort from 'components/Sort/Sort';
 import styles from './styles.module.css';
 import { Order } from 'models/order';
 
-interface Props {
+export interface Props {
   /** The current search condition. */
   search?: string;
   /** Callback for when the search condition is modified. */
@@ -23,7 +23,7 @@ const Header: React.FC<Props> = ({ search, onSearch, order, setOrder }) => {
   };
 
   return (
-    <div className={styles.container}>
+    <div className={styles.container} data-testid="header">
       <Sort order={order} setOrder={setOrder} />
       <Searchbar placeholder="Buscar" value={search} onChange={handleSearchChange} />
     </div>

@@ -10,7 +10,7 @@ import ProductCard from 'components/ProductCard/ProductCard';
 import { computePriceDiscount } from '../../utils/price';
 import Divider from 'components/Divider/Divider';
 
-interface Props {
+export interface Props {
   initialData: Product[];
 }
 
@@ -54,12 +54,14 @@ const HomePage: NextPage<Props> = ({ initialData: initialProducts }) => {
   };
 
   return (
-    <div>
+    <div data-testid="home">
       <Header search={search} onSearch={setSearch} order={order} setOrder={setOrder} />
       <Divider />
       <GridLayout>
         {products.map((product) => (
-          <ProductCard key={product.id} product={product} onAdd={handleAdd(product.name)} />
+          <div key={product.id} data-testid={`product-id-${product.id}`}>
+            <ProductCard product={product} onAdd={handleAdd(product.name)} />
+          </div>
         ))}
       </GridLayout>
     </div>
