@@ -1,0 +1,11 @@
+.divider {
+  color: #ececec;
+  margin-top: 35px;
+  margin-bottom: -10px;
+}
+
+@media (min-width: 768px) {
+  .divider {
+    display: none;
+  }
+}

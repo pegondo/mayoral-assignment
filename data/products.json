@@ -1,0 +1,90 @@
+[
+  {
+    "id": 1,
+    "imageSrc": "https://fastly.picsum.photos/id/10/2500/1667.jpg?hmac=J04WWC_ebchx3WwzbM-Z4_KC_LeLBWr5LZMaAkWkF68",
+    "name": "Polo manga larga estampada",
+    "price": 18.99,
+    "discountPercentage": 20,
+    "hasMoreColors": true
+  },
+  {
+    "id": 2,
+    "imageSrc": "https://fastly.picsum.photos/id/11/2500/1667.jpg?hmac=xxjFJtAPgshYkysU_aqx2sZir-kIOjNR9vx0te7GycQ",
+    "name": "Polo manga larga bandas azules",
+    "price": 20.99,
+    "hasMoreColors": true
+  },
+  {
+    "id": 3,
+    "imageSrc": "https://fastly.picsum.photos/id/12/2500/1667.jpg?hmac=Pe3284luVre9ZqNzv1jMFpLihFI6lwq7TPgMSsNXw2w",
+    "name": "Polo manga larga estampada blanco",
+    "price": 18.99,
+    "discountPercentage": 20,
+    "hasMoreColors": true
+  },
+  {
+    "id": 4,
+    "imageSrc": "https://fastly.picsum.photos/id/13/2500/1667.jpg?hmac=SoX9UoHhN8HyklRA4A3vcCWJMVtiBXUg0W4ljWTor7s",
+    "name": "Polo manga larga miniestampado color blanco y celeste",
+    "price": 16.99
+  },
+  {
+    "id": 5,
+    "imageSrc": "https://fastly.picsum.photos/id/14/2500/1667.jpg?hmac=ssQyTcZRRumHXVbQAVlXTx-MGBxm6NHWD3SryQ48G-o",
+    "name": "Polo manga larga estampada rojo",
+    "price": 18.99,
+    "discountPercentage": 20,
+    "hasMoreColors": true
+  },
+  {
+    "id": 6,
+    "imageSrc": "https://fastly.picsum.photos/id/15/2500/1667.jpg?hmac=Lv03D1Y3AsZ9L2tMMC1KQZekBVaQSDc1waqJ54IHvo4",
+    "name": "Polo blanco cuello rojo",
+    "price": 20,
+    "discountPercentage": 10,
+    "hasMoreColors": true
+  },
+  {
+    "id": 7,
+    "imageSrc": "https://fastly.picsum.photos/id/16/2500/1667.jpg?hmac=uAkZwYc5phCRNFTrV_prJ_0rP0EdwJaZ4ctje2bY7aE",
+    "name": "Polo azul celeste",
+    "price": 30,
+    "discountPercentage": 50
+  },
+  {
+    "id": 8,
+    "imageSrc": "https://fastly.picsum.photos/id/17/2500/1667.jpg?hmac=HD-JrnNUZjFiP2UZQvWcKrgLoC_pc_ouUSWv8kHsJJY",
+    "name": "Polo naranja",
+    "price": 22,
+    "discountPercentage": 20,
+    "hasMoreColors": true
+  },
+  {
+    "id": 9,
+    "imageSrc": "https://fastly.picsum.photos/id/18/2500/1667.jpg?hmac=JR0Z_jRs9rssQHZJ4b7xKF82kOj8-4Ackq75D_9Wmz8",
+    "name": "Polo tricolor",
+    "price": 25,
+    "discountPercentage": 25,
+    "hasMoreColors": true
+  },
+  {
+    "id": 10,
+    "imageSrc": "https://fastly.picsum.photos/id/19/2500/1667.jpg?hmac=7epGozH4QjToGaBf_xb2HbFTXoV5o8n_cYzB7I4lt6g",
+    "name": "Polo negro cuello rojo",
+    "price": 20
+  },
+  {
+    "id": 11,
+    "imageSrc": "https://fastly.picsum.photos/id/20/3670/2462.jpg?hmac=CmQ0ln-k5ZqkdtLvVO23LjVAEabZQx2wOaT4pyeG10I",
+    "name": "Camiseta manga corta burdeos",
+    "price": 12,
+    "discountPercentage": 20
+  },
+  {
+    "id": 12,
+    "imageSrc": "https://fastly.picsum.photos/id/21/3008/2008.jpg?hmac=T8DSVNvP-QldCew7WD4jj_S3mWwxZPqdF0CNPksSko4",
+    "name": "Camiseta manga larga cuello alto",
+    "price": 25,
+    "hasMoreColors": true
+  }
+]

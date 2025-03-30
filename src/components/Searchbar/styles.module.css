@@ -1,6 +1,7 @@
 .container {
   position: relative;
   margin: 0px 20px;
+  min-width: 300px;
 }
 
 .input {

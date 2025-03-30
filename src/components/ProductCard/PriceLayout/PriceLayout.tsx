@@ -1,20 +1,15 @@
 import clsx from 'clsx';
 import styles from './styles.module.css';
+import { computePriceDiscount } from '../../../../utils/price';
 
 interface Props {
   price: number;
   discountPercentage?: number;
 }
 
-const computeDiscount = (originalPrice: number, discountPercentage?: number) => {
-  if (!discountPercentage) return originalPrice;
-  const pricePercentage = 100 - discountPercentage;
-  return (originalPrice * pricePercentage) / 100;
-};
-
 const PriceLayout: React.FC<Props> = ({ price, discountPercentage }) => {
   const hasDiscount = !!discountPercentage;
-  const discountedPrice = computeDiscount(price, discountPercentage);
+  const discountedPrice = computePriceDiscount(price, discountPercentage);
 
   return (
     <div>

@@ -23,13 +23,13 @@ const Sort: React.FC<Props> = ({ order, setOrder }) => {
         className={clsx(styles.icon, isDescOrder && styles.highlight)}
         onClick={handleSortChange('desc')}
       >
-        <Minus strokeWidth={isDescOrder ? 5 : undefined} />
+        <Minus strokeWidth={isDescOrder ? 7 : 5} />
       </div>
       <div
         className={clsx(styles.icon, isAscOrder && styles.highlight)}
         onClick={handleSortChange('asc')}
       >
-        <Plus strokeWidth={isAscOrder ? 5 : undefined} />
+        <Plus strokeWidth={isAscOrder ? 7 : 5} />
       </div>
     </div>
   );
