@@ -1,13 +1,18 @@
+'use client';
+
 import { Plus, Minus } from 'lucide-react';
 import styles from './styles.module.css';
 import { Order } from 'models/order';
 import clsx from 'clsx';
 
 interface Props {
+  /** The current sort criteria. */
   order?: Order;
+  /** Callback called when the sort criteria is modified. */
   setOrder: (order?: Order) => void;
 }
 
+/** React component featuring a sort criteria handling layout. */
 const Sort: React.FC<Props> = ({ order, setOrder }) => {
   const isAscOrder = order === 'asc';
   const isDescOrder = order === 'desc';

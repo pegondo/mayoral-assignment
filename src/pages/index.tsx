@@ -27,6 +27,7 @@ const HomePage: NextPage<Props> = ({ initialData: initialProducts }) => {
   const [search, setSearch] = useState<string>();
   const [order, setOrder] = useState<Order>();
 
+  // Filter the products.
   useEffect(() => {
     const filteredProducts = !search
       ? initialProducts
@@ -36,6 +37,7 @@ const HomePage: NextPage<Props> = ({ initialData: initialProducts }) => {
     setProducts(filteredProducts);
   }, [search, initialProducts]);
 
+  // Sort the products.
   useEffect(() => {
     const sortedProducts = !order
       ? initialProducts
@@ -47,13 +49,17 @@ const HomePage: NextPage<Props> = ({ initialData: initialProducts }) => {
     setProducts(sortedProducts);
   }, [order, initialProducts]);
 
+  const handleAdd = (name: string) => () => {
+    alert(`Añadido ${name}`);
+  };
+
   return (
     <div>
       <Header search={search} onSearch={setSearch} order={order} setOrder={setOrder} />
       <Divider />
       <GridLayout>
         {products.map((product) => (
-          <ProductCard product={product} key={product.id} />
+          <ProductCard key={product.id} product={product} onAdd={handleAdd(product.name)} />
         ))}
       </GridLayout>
     </div>

@@ -1,17 +1,17 @@
 .container {
   position: relative;
-  margin: 0px 20px;
   min-width: 300px;
+  margin: 0px 20px;
 }
 
 .input {
   width: 100%;
-  box-sizing: border-box;
   height: 40px;
-  border: 2px solid #d1d1d1;
-  border-radius: 6px;
   padding: 5px;
   padding-left: 40px; /* To fit the icon */
+  box-sizing: border-box;
+  border: 2px solid #d1d1d1;
+  border-radius: 6px;
 }
 
 .icon {

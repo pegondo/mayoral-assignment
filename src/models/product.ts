@@ -1,3 +1,4 @@
+/** Interface representing a product. */
 export interface Product {
   id: number;
   imageSrc: string;

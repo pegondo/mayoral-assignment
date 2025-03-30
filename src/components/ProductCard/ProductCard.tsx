@@ -8,42 +8,38 @@ import clsx from 'clsx';
 import PriceLayout from './PriceLayout/PriceLayout';
 
 interface Props {
+  /** The product to display. */
   product: Product;
+  /** Callback called when the add button is pressed. */
+  onAdd: () => void;
 }
 
-// TODO: Consider splitting the component.
-
-const ProductCard: React.FC<Props> = ({ product }) => {
-  const handleAdd = () => {
-    alert('element added');
-  };
-
-  return (
-    <Card>
-      <div className={styles.container}>
-        <Image
-          src={product.imageSrc}
-          alt={product.name}
-          width={275}
-          height={275}
-          layout="responsive"
-          objectFit="cover"
-        />
-        <div className={clsx(styles.text, styles.name)}>
-          <span>{product.name}</span>
-        </div>
-        <PriceLayout price={product.price} discountPercentage={product.discountPercentage} />
-        <p className={clsx(styles.text, styles.hasMoreColors)}>
-          {product.hasMoreColors && 'más colores'}
-        </p>
-        <div>
-          <button type="button" className={styles.button} onClick={handleAdd}>
-            Añadir
-          </button>
-        </div>
+/** React component that displays the given product details in a card format. */
+const ProductCard: React.FC<Props> = ({ product, onAdd }) => (
+  <Card>
+    <div className={styles.container}>
+      <Image
+        src={product.imageSrc}
+        alt={product.name}
+        width={275}
+        height={275}
+        layout="responsive"
+        objectFit="cover"
+      />
+      <div className={clsx(styles.text, styles.name)}>
+        <span>{product.name}</span>
       </div>
-    </Card>
-  );
-};
+      <PriceLayout price={product.price} discountPercentage={product.discountPercentage} />
+      <p className={clsx(styles.text, styles.hasMoreColors)}>
+        {product.hasMoreColors && 'más colores'}
+      </p>
+      <div>
+        <button type="button" className={styles.button} onClick={onAdd}>
+          Añadir
+        </button>
+      </div>
+    </div>
+  </Card>
+);
 
 export default ProductCard;
