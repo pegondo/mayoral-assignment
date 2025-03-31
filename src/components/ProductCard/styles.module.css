@@ -30,6 +30,10 @@
   cursor: pointer;
 }
 
+.button:hover {
+  background-color: #1e5f99;
+}
+
 @media (min-width: 768px) {
   .container {
     padding-bottom: 20px;
