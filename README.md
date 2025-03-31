@@ -30,6 +30,8 @@ You can run the project in dev mode with:
 yarn dev
 ```
 
+And access it from `http://localhost:3000/`.
+
 ### Build and serve the project.
 
 You can build the project with:
@@ -38,11 +40,13 @@ You can build the project with:
 yarn build
 ```
 
-And then serve it with:
+Then serve it with:
 
 ```bash
 yarn start
 ```
+
+And access it from `http://localhost:3000/`.
 
 ## Tests
 
