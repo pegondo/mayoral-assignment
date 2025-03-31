@@ -1,6 +1,7 @@
 import { fireEvent, render, screen } from '@testing-library/react';
-import HomePage, { Props } from '.';
-import { Product } from 'models/product';
+import HomePage, { Props } from '../pages';
+import { Product } from '../models/product';
+import React from 'react';
 
 describe('<HomePage />', () => {
   const imageSrc =
